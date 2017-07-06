@@ -1,0 +1,256 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Abel', sans-serif;
+}
+
+/*--------------------NAV-----------------*/
+
+.nav {
+  margin-right: 10px;
+}
+
+.holly {
+  float: left;
+}
+
+.holly a {
+  font-size: 36px;
+  padding: 25px 25px;
+  letter-spacing: 5px;
+}
+
+.holly a:hover {
+  text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+      float: right;
+}
+
+li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 30px 14px;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+.dropdown-menu {
+    display: none;
+    background-color: white;
+    margin-left: 10px;
+    margin-top: -20px;
+}
+
+.dropdown-menu a {
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+
+.work_dropdown:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    background-color: black;
+}
+
+/*------------SLIDE-OUT NAV-----------*/
+
+#slide {
+  height: 5000px;
+  width: 100%;
+  list-style-type: none;
+  background-color: white;
+  position: absolute;
+  padding-top: 10px;
+  padding-left: 5px;
+  right: 100vw;
+  -webkit-transition: right 0.75s;
+  transition: right 0.75s;
+
+}
+
+.animation {
+  right: 0 !important;
+}
+
+#slide li {
+  list-style-type: none;
+	text-align: left;
+  float: none;
+  line-height: 0px;
+}
+
+#slide li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding: 25px 14px;
+}
+
+#slide .holly_slide a{
+  font-size: 26px;
+  letter-spacing: 5px;
+  margin-top: -12px;
+  margin-left: 4px;
+}
+
+#burger-container {
+  width: 30px;
+	position: fixed;
+  right: 18px;
+	top: 24px;
+}
+
+#burger {
+  display: block;
+}
+
+#burger span {
+  background: black;
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin-bottom: 5px;
+  transition: all ease-in-out 0.4s;
+  position: relative;
+  top: 0;
+}
+
+#burger-container.open span:nth-child(2) {
+  width: 0;
+  opacity: 0;
+}
+
+#burger-container.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 8px;
+}
+
+#burger-container.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: -8px;
+}
+
+.holly_burger {
+  margin-top: 12px;
+}
+
+.holly_burger a{
+  text-decoration: none;
+  color: black;
+  font-size: 26px;
+  margin-left: 18px;
+  letter-spacing: 5px;
+}
+
+/*--------------CONTENT-------------*/
+
+p {
+    font-size: 18px;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+/*--------------------IMAGES----------------*/
+
+.artpics {
+    text-align: center;
+}
+
+.art {
+    max-height: 450px;
+    margin: 10px;
+}
+
+/*--------------EXHIBITIONS-------------*/
+
+table {
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+td {
+    padding: 0px 0px 10px 15px;
+}
+
+.exhibition {
+  padding-bottom: 25px;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+/*--------------MEDIA QUERIES-------------*/
+
+@media screen and (min-width: 1069px) {
+
+	#burger-container, .holly_burger {
+		display: none;
+	}
+
+	.navigation{
+		padding-top: 20px;
+    padding-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 1068px) {
+
+		.nav {
+			display: none;
+		}
+}
+
+@media screen and (max-width: 480px) {
+
+    .art {
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0;
+    }
+
+    .holly_burger a{
+      font-size: 26px;
+    }
+
+    #slide .holly_slide a{
+      font-size: 26px;
+    }
+
+    #slide li {
+		  list-style-type: none;
+		}
+
+    #slide li a {
+		  font-size: 16px;
+      margin-bottom: -5px;
+		}
+}
