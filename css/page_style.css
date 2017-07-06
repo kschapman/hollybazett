@@ -182,6 +182,7 @@ p {
 
 .art {
     max-height: 450px;
+    max-width: 96%;
     margin: 10px;
 }
 
